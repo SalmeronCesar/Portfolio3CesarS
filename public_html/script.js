@@ -13,6 +13,10 @@ $("document").ready(function() {
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 
     $('h1').bind('click', mouseClick);
+    
+    $('addApara').bind
+    
+    $('removeApara').bind
 });
 
 function mouseOverMe() {
