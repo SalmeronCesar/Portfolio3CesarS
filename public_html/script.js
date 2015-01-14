@@ -14,10 +14,41 @@ $("document").ready(function() {
 
     $('h1').bind('click', mouseClick);
     
-    $('addApara').bind
+    $('replaceWText').bind('click',replaceWText);
     
-    $('removeApara').bind
+    $('randApara').bind('click',addAPara);
+    
+    $('removeApara').bind('click', removeAPara);
+    
+    $('#show').css('visibility', 'hidden');
+    
+    $('#hide').bind('click', hideThePage);
+    
+    $('#show').bind('click', showThePage);
 });
+
+function hideThePage(){
+    $('#show').css('visibility', 'visible');
+    $('#div').hide('slide', {}, 2500);
+    $('#show').show('fold', {}, 2500);
+}
+
+function showThePage(){
+    $('div').show('fold', {}, 2500);
+     $('show').hide('puff', {}, 2500);
+}
+
+function removeAPara(){
+    $('#randPara p:last').remove();
+}
+
+function addAPara(){
+    $('randPara').append('<p>|""| (0 0) |""| </p>');
+}
+
+function replaceWText(){
+    $('#randPara').html('<h1>Peeka boo</h1>');
+}
 
 function mouseOverMe() {
     $("p").html("Hey");
