@@ -6,25 +6,27 @@
 
 
 $("document").ready(function() {
-    $(".practice").css("background-color", "yellow");
+    $(".yeah").css("background-color", "cyan");
 
-    $('p:last').css({"background-color": "blue", "color": "white"});
+    $('p:last').css({"background-color": "", "color": "white"});
 
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 
     $('h1').bind('click', mouseClick);
     
-    $('replaceWText').bind('click',replaceWText);
+    $('#replaceWText').bind('click',replaceWText);
     
-    $('randApara').bind('click',addAPara);
+    $('#randPara').bind('click',addAPara);
     
-    $('removeApara').bind('click', removeAPara);
+    $('#removeApara').bind('click', removeAPara);
     
     $('#show').css('visibility', 'hidden');
     
     $('#hide').bind('click', hideThePage);
     
     $('#show').bind('click', showThePage);
+    
+    $('#Portfolio3').accordion({header: "h3"});
 });
 
 function hideThePage(){
@@ -43,7 +45,7 @@ function removeAPara(){
 }
 
 function addAPara(){
-    $('randPara').append('<p>|""| (0 0) |""| </p>');
+    $('#randPara').append('<p>you</p>');
 }
 
 function replaceWText(){
@@ -57,5 +59,5 @@ function mouseOutMe() {
     $('h1').html('Hello');
 }
 function mouseClick() {
-    $('p').html('Hello people!!!!!!!!');
+    $('p').html('Hello people!');
 }
