@@ -45,11 +45,11 @@ function removeAPara(){
 }
 
 function addAPara(){
-    $('#randPara').append('<p>you</p>');
+    $('#randPara').append('<p></p>');
 }
 
 function replaceWText(){
-    $('#randPara').html('<h1>Peeka boo</h1>');
+    $('#randPara').html('<h1></h1>');
 }
 
 function mouseOverMe() {
@@ -59,5 +59,5 @@ function mouseOutMe() {
     $('h1').html('Hello');
 }
 function mouseClick() {
-    $('p').html('Hello people!');
+    $('p').html('');
 }
